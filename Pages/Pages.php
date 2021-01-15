@@ -61,13 +61,15 @@ class Pages
     const SEARCH_RESERVATIONS = 'search-reservations.php';
     const VIEW_CALENDAR = 'view-calendar.php';
     const VIEW_SCHEDULE = 'view-schedule.php';
+    const KIMBERLEY = 'schedule.php?sid=1';
+    const CRANBROOK = 'schedule.php?sid=2';
+    const FERNIE = 'schedule.php?sid=3';
 
     private static $_pages = array(
-        1 => array('url' => Pages::DASHBOARD, 'name' => 'Dashboard'),
-        2 => array('url' => Pages::SCHEDULE, 'name' => 'Schedule'),
-        3 => array('url' => Pages::MY_CALENDAR, 'name' => 'MyCalendar'),
-        4 => array('url' => Pages::CALENDAR, 'name' => 'ResourceCalendar'),
-        5 => array('url' => Pages::LOGIN, 'name' => 'Login'),
+	1 => array('url' => Pages::KIMBERLEY, 'name' => 'Kimberley'), 
+	2 => array('url' => Pages::CRANBROOK, 'name' => 'Cranbrook'),
+	3 => array('url' => Pages::FERNIE, 'name' => 'Fernie'),
+        4 => array('url' => Pages::LOGIN, 'name' => 'Login'),
     );
 
     private function __construct()
