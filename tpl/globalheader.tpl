@@ -176,6 +176,12 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Schedule"} <b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
+			        <li><a href="{$Path}{Pages::KIMBERLEY}">Kimberley</a>
+                                </li>
+				<li><a href="{$Path}{Pages::CRANBROOK}">Cranbrook</a>
+                                </li>
+				<li><a href="{$Path}{Pages::FERNIE}">Fernie</a>
+                                </li>
                                 <li id="navBookings"><a href="{$Path}{Pages::SCHEDULE}">{translate key="Bookings"}</a>
                                 </li>
                                 <li id="navMyCalendar"><a
