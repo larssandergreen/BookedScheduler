@@ -61,7 +61,6 @@ function Reminder(opts)
 		}
 		else
 		{
-			disable(elements.endDiv);
 		}
 
 		var wireUp = function (div)
