@@ -128,7 +128,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
             <div class="row">
                 <div class="col-xs-12 col-sm-6" id="default-page">
                     <div class="form-group">
-                        <label class="reg" for="homepage">{translate key="DefaultPage"}</label>
+                        <label class="reg" for="homepage">City (for bookings)</label>
                         <select {formname key='DEFAULT_HOMEPAGE'} id="homepage" class="form-control">
                             {html_options values=$HomepageValues output=$HomepageOutput selected=$Homepage}
                         </select>
@@ -138,10 +138,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                 <div class="col-xs-12 col-sm-6" id="timezone">
                     <label class="reg" for="timezoneDropDown">{translate key="Timezone"}</label>
 
-                    <div class="input-group">
+                    <div class="input-group" style="display:none;">
                         <span class="input-group-addon"><a href="#" id="detectTimezone"
                                                            title="{translate key=Detect}"><i class="fa fa-clock-o"></i></a></span>
-                        <select {formname key='TIMEZONE'} class="form-control" id="timezoneDropDown">
+                        <select {formname key='TIMEZONE'} class="form-control" id="timezoneDropDown" style="display:none;">
                             {html_options values=$TimezoneValues output=$TimezoneOutput selected=$Timezone}
                         </select>
                     </div>
@@ -162,7 +162,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
                 <div class="col-xs-12 col-sm-6" id="organization">
                     <div class="form-group">
-                        <label class="reg" for="txtOrganization">{translate key="Organization"}</label>
+                        <label class="reg" for="txtOrganization">Street Address</label>
                         <input type="text" id="txtOrganization" {formname key="ORGANIZATION"} class="form-control"
                                size="20"
                                 {if $RequireOrganization}required="required"
@@ -175,7 +175,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
             <div class="row">
                 <div class="col-xs-12 col-sm-6" id="position">
                     <div class="form-group">
-                        <label class="reg" for="txtPosition">{translate key="Position"}</label>
+                        <label class="reg" for="txtPosition">Postal Code</label>
                         <input type="text" id="txtPosition" {formname key="POSITION"} class="form-control"
                                size="20" {if $RequirePosition}required="required"
                             data-bv-notempty="true"
@@ -230,7 +230,22 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     </div>
                 </div>
             {/if}
-
+            
+            <div class="registrationHeader"><h3>Waiver</h3></div>
+            <p>By registering for Wildsight’s Apple Capture equipment booking system you agree to the following:</p>
+            <p>WAIVER OF ALL CLAIMS, RELEASE FROM LIABILITY and ASSUMPTION OF RISKS</p>
+            <p>WARNING: By signing this you also give up the right to sue</p>
+            <p>Wildsight means the regional society Wildsight, its five branches (Creston Valley, Golden, Elk Valley, Kimberley/Cranbrook, and Invermere), and their officers, directors, members, employees, contractors, agents, and any person acting on their behalf.</p> 
+            <p>By participating in the Apple Capture Project and/or using the Apple Capture equipment (fruit press, grinder, dehydrator, fruit picker, ladder, or other equipment), I agree to this release form from liability, waiver of all claims and agreement not to sue.</p>
+            <p>I also agree for myself, my heirs, my executors, administrators and assignees to forever discharge and release Wildsight for any personal injury, death, property damage or loss sustained by me as a result of my participation in the Wildsight activity due to any cause whatsoever, including, without limitation, negligence on the part of Wildsight or its staff.</p>
+            <p>I am aware that certain dangers and risks are possible, some of which include:</p>
+            <p>Equipment lifting and transportation – Equipment is heavy and requires adequate strength to move, load, and unload.</p> 
+            <p>Equipment use – The fruit pressing and grinding equipment have moving parts that can cause injury to fingers.  The dehydrator is an electrical appliance and could cause electrical shock.  Ladders can fall or be fallen from.</p>
+            <p>Food safety – Dirty or contaminated fruit could cause illness.  Unpasteurized juice can harbor bacteria.</p>
+            <p>I further acknowledge and agree that I am to return the equipment in the condition in which it was received.  This includes thoroughly cleaning all parts of the equipment.</p>
+            <p>I am aware that it is my responsibility to return the equipment by the end of the day of my reservation, and therefore agree to schedule use efficiently so that the equipment can be used by as many community members as possible.</p>
+            <p>I accept all the dangers and risks and the possibility of injury, death, property damage or lose resulting from participating in the Apple Capture Project. I agree not to sue Wildsight on account of any circumstance whatsoever arising from my participation in said project.</p>
+            
             <div>
                 <button type="submit" name="{Actions::REGISTER}" value="{translate key='Register'}"
                         class="btn btn-primary col-xs-12" id="btnUpdate">{translate key='Register'}</button>
