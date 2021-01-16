@@ -1101,3 +1101,4 @@ class en_us extends Language
 	{
 		return 'en';
 	}
+}
