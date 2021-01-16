@@ -1,0 +1,15 @@
+
+.menubaritem, .schedule_title, .reservationHeader, .reservations-left-header, .schedule_dates {
+font-family: 'TradeGothicLTPro-BdCn20' !important;
+text-transform:uppercase;
+}
+
+.resdate {
+background-color: #678930 !important;
+font-size: 12pt;
+}
+
+.resourceNameSelector {
+color: #471D13 !important;
+font-size: 9pt;
+}
