@@ -38,7 +38,7 @@ class en_us extends Language
 		$dates['general_datetime'] = 'm/d/Y g:i:s A';
 		$dates['short_datetime'] = 'n/j/y g:i A';
 		$dates['schedule_daily'] = 'l, n/j/y';
-		$dates['reservation_email'] = 'm/d/Y @ g:i A (e)';
+		$dates['reservation_email'] = 'm/d/Y @ g:i A';
 		$dates['res_popup'] = 'D, n/d g:i A';
 		$dates['res_popup_time'] = 'g:i A';
 		$dates['short_reservation_date'] = 'n/j/y g:i A';
@@ -68,7 +68,9 @@ class en_us extends Language
 	protected function _LoadStrings()
 	{
 		$strings = array();
-
+ 		$strings['Kimberley'] = 'Kimberley';
+ 		$strings['Cranbrook'] = 'Cranbrook';
+ 		$strings['Fernie'] = 'Fernie';
 		$strings['FirstName'] = 'First Name';
 		$strings['LastName'] = 'Last Name';
 		$strings['Timezone'] = 'Timezone';
@@ -290,11 +292,11 @@ class en_us extends Language
 		$strings['ReservationApprovalPreference'] = 'When my pending reservation is approved';
 		$strings['PreferenceSendEmail'] = 'Send me an email';
 		$strings['PreferenceNoEmail'] = 'Do not notify me';
-		$strings['ReservationCreated'] = 'Your reservation was successfully created!';
-		$strings['ReservationUpdated'] = 'Your reservation was successfully updated!';
+		$strings['ReservationCreated'] = 'Your equipment booking is confirmed.';
+		$strings['ReservationUpdated'] = 'Your booking was updated!';
 		$strings['ReservationRemoved'] = 'Your reservation was removed';
 		$strings['ReservationRequiresApproval'] = 'One or more of the resources reserved require approval before usage.  This reservation will be pending until it is approved.';
-		$strings['YourReferenceNumber'] = 'Your reference number is %s';
+		$strings['YourReferenceNumber'] = 'An email with details to pick up your equipment has been sent to you.';
 		$strings['ChangeUser'] = 'Change User';
 		$strings['MoreResources'] = 'More Resources';
 		$strings['ReservationLength'] = 'Reservation Length';
@@ -989,7 +991,7 @@ class en_us extends Language
 
 		// Email Subjects
 		$strings['ReservationApprovedSubject'] = 'Your reservation has been approved';
-		$strings['ReservationCreatedSubject'] = 'Your reservation was created';
+		$strings['ReservationCreatedSubject'] = 'Your Apple Capture Equipment Booking';
 		$strings['ReservationUpdatedSubject'] = 'Your reservation was updated';
 		$strings['ReservationDeletedSubject'] = 'Your reservation was removed';
 		$strings['ReservationCreatedAdminSubject'] = 'Notification: A reservation was created';
@@ -1003,8 +1005,8 @@ class en_us extends Language
 		$strings['ActivateYourAccount'] = 'Please activate your account';
 		$strings['ReportSubject'] = 'Your requested report (%s)';
 		$strings['ReservationStartingSoonSubject'] = 'Reservation for %s is starting soon';
-		$strings['ReservationEndingSoonSubject'] = 'Reservation for %s is ending soon';
-		$strings['UserAdded'] = 'A new user has been added';
+		$strings['ReservationEndingSoonSubject'] = 'Reminder: equipment booking ends soon';
+		$strings['UserAdded'] = 'A new Apple Capture user has been added';
 		$strings['UserDeleted'] = 'User account for %s was deleted by %s';
 		$strings['GuestAccountCreatedSubject'] = 'Your %s account details';
 		$strings['AccountCreatedSubject'] = 'Your %s account details';
