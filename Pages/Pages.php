@@ -69,7 +69,6 @@ class Pages
 	1 => array('url' => Pages::KIMBERLEY, 'name' => 'Kimberley'), 
 	2 => array('url' => Pages::CRANBROOK, 'name' => 'Cranbrook'),
 	3 => array('url' => Pages::FERNIE, 'name' => 'Fernie'),
-        4 => array('url' => Pages::LOGIN, 'name' => 'Login'),
     );
 
     private function __construct()
