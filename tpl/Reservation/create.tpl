@@ -244,7 +244,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
                     <div class="col-xs-12 reservationTitle">
                         <div class="form-group has-feedback">
-                            <label for="reservationTitle">{translate key="ReservationTitle"}</label>
+                            <label for="reservationTitle">Title (optional)</label>
                             {textbox name="RESERVATION_TITLE" class="form-control" value="ReservationTitle" id="reservationTitle" maxlength="300" required=$TitleRequired}
                             {if $TitleRequired}
                                 <i class="glyphicon glyphicon-asterisk form-control-feedback"
@@ -255,7 +255,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
                     <div class="col-xs-12 reservationDescription">
                         <div class="form-group has-feedback">
-                            <label for="description">{translate key="ReservationDescription"}
+                            <label for="description">Description (optional)
                             </label>
                             <textarea id="description" name="{FormKeys::DESCRIPTION}"
                                       class="form-control"
@@ -320,18 +320,18 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                         </div>
                         <div id="reminderOptionsEnd">
                             <div class="checkbox">
-                                <input type="checkbox" id="endReminderEnabled"
+                                <input type="checkbox" id="endReminderEnabled" checked="checked"
                                        class="reminderEnabled" {formname key=END_REMINDER_ENABLED}/>
                                 <label for="endReminderEnabled" style="min-width:0;"></label>
                                 <label for="endReminderTime" class="no-show">End Reminder Time</label>
                                 <label for="endReminderInterval" class="no-show">End Reminder Interval</label>
-                                <input type="number" min="0" max="999" size="3" maxlength="3" value="15"
+                                <input type="number" min="0" max="999" size="3" maxlength="3" value="4"
                                        class="reminderTime form-control input-sm inline-block" {formname key=END_REMINDER_TIME}
                                        id="endReminderTime"/>
                                 <select class="reminderInterval form-control input-sm inline-block" {formname key=END_REMINDER_INTERVAL}
                                         id="endReminderInterval">
+			  	    <option value="{ReservationReminderInterval::Hours}">{translate key=hours}</option>
                                     <option value="{ReservationReminderInterval::Minutes}">{translate key=minutes}</option>
-                                    <option value="{ReservationReminderInterval::Hours}">{translate key=hours}</option>
                                     <option value="{ReservationReminderInterval::Days}">{translate key=days}</option>
                                 </select>
                                 <span class="reminderLabel">{translate key=ReminderBeforeEnd}</span>
