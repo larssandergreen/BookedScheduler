@@ -137,7 +137,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 					</div>
 				{/if}
 				<div id="change-language" class="col-xs-12 col-sm-6">
-					<button type="button" class="btn btn-link pull-right-sm" data-toggle="collapse"
+					<button style="display:none;" type="button" class="btn btn-link pull-right-sm" data-toggle="collapse"
 							data-target="#change-language-options"><span><i class="glyphicon glyphicon-globe"></i></span>
 						{translate key=ChangeLanguage}
 					</button>
