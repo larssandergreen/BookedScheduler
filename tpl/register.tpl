@@ -128,7 +128,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
             <div class="row">
                 <div class="col-xs-12 col-sm-6" id="default-page">
                     <div class="form-group">
-                        <label class="reg" for="homepage">City (for bookings)</label>
+                        <label class="reg" for="homepage">{translate key="DefaultPage"}</label>
                         <select {formname key='DEFAULT_HOMEPAGE'} id="homepage" class="form-control">
                             {html_options values=$HomepageValues output=$HomepageOutput selected=$Homepage}
                         </select>
@@ -138,10 +138,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                 <div class="col-xs-12 col-sm-6" id="timezone">
                     <label class="reg" for="timezoneDropDown">{translate key="Timezone"}</label>
 
-                    <div class="input-group" style="display:none;">
+                    <div class="input-group">
                         <span class="input-group-addon"><a href="#" id="detectTimezone"
                                                            title="{translate key=Detect}"><i class="fa fa-clock-o"></i></a></span>
-                        <select {formname key='TIMEZONE'} class="form-control" id="timezoneDropDown" style="display:none;">
+                        <select {formname key='TIMEZONE'} class="form-control" id="timezoneDropDown">
                             {html_options values=$TimezoneValues output=$TimezoneOutput selected=$Timezone}
                         </select>
                     </div>
@@ -162,7 +162,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
                 <div class="col-xs-12 col-sm-6" id="organization">
                     <div class="form-group">
-                        <label class="reg" for="txtOrganization">Street Address</label>
+                        <label class="reg" for="txtOrganization">{translate key="Organization"}</label>
                         <input type="text" id="txtOrganization" {formname key="ORGANIZATION"} class="form-control"
                                size="20"
                                 {if $RequireOrganization}required="required"
@@ -175,7 +175,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
             <div class="row">
                 <div class="col-xs-12 col-sm-6" id="position">
                     <div class="form-group">
-                        <label class="reg" for="txtPosition">Postal Code</label>
+                        <label class="reg" for="txtPosition">{translate key="Position"}</label>
                         <input type="text" id="txtPosition" {formname key="POSITION"} class="form-control"
                                size="20" {if $RequirePosition}required="required"
                             data-bv-notempty="true"
