@@ -16,13 +16,19 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
+<p>Your apple capture equipment booking is confirmed, details are below.</p>
+<p>Here's what you need to know to pick up your equipment:</p>
+<p><b></b></p>
+
+<p>For Kimberley: Find your equipment in the Kimberley Community Garden shed, on Rotary Dr south of the Aquatic Centre. Shed Combination: 4769</p>
+<p>For Cranbrook: Find your equipment in the Public Produce Garden shed (18th Ave N between 6th and 8th St). The gate is unlocked, and the equipment is in the <b>second</b> shed. Shed Combination: 4769</p>
+<p>For Fernie: Find your equipment in the Storage Shed in the covered area at the Wildsight office at 891 2nd Ave.  Shed Combination: 0445 </p>
+<p>We need your donations to keep Apple Capture running. Please donate (<a href="https://secure.wildsight.ca/civicrm/contribute/transact?reset=1&id=34&source=Email%20-%20Apples">for Kimberley and Cranbrook</a>, for <a href="https://secure.wildsight.ca/civicrm/contribute/transact?reset=1&id=35&source=Email%20-%20Apples">Fernie</a>).</p>
 <p><strong>Reservation Details:</strong></p>
 
 <p>
 	<strong>Start:</strong> {formatdate date=$StartDate key=reservation_email}<br/>
 	<strong>End:</strong> {formatdate date=$EndDate key=reservation_email}<br/>
-	<strong>Title:</strong> {$Title}<br/>
-	<strong>Description:</strong> {$Description|nl2br}
 	{if $Attributes|count > 0}
 		<br/>
 	    {foreach from=$Attributes item=attribute}
@@ -134,7 +140,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 <p><strong>Reference Number:</strong> {$ReferenceNumber}</p>
 
 {if !$Deleted}
-	<a href="{$ScriptUrl}/{$ReservationUrl}">View this reservation</a>
+	<a href="{$ScriptUrl}/{$ReservationUrl}">View this booking</a>
 	|
 	<a href="{$ScriptUrl}/{$ICalUrl}">Add to Calendar</a>
 	|
