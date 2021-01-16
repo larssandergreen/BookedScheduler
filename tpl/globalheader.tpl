@@ -356,11 +356,11 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Help"} <b
                                     class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li id="navHelp"><a href="https://www.bookedscheduler.com/help/usage">{translate key=Help}</a></li>
+			    <li id="navAbout"><a href="{$Path}help.php?ht=about">How to book</a></li>
+                            <li id="navHelp"><a href="https://www.bookedscheduler.com/help/usage">Program help</a></li>
                             {if $CanViewAdmin}
                                 <li id="navHelpAdmin"><a href="https://www.bookedscheduler.com/help/administration">{translate key=Administration}</a></li>
                             {/if}
-                            <li id="navAbout"><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
                         </ul>
                     </li>
                     {if $LoggedIn}
