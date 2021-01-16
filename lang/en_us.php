@@ -102,7 +102,7 @@ class en_us extends Language
 		$strings['Username'] = 'Username';
 		$strings['Password'] = 'Password';
 		$strings['PasswordConfirmation'] = 'Confirm Password';
-		$strings['DefaultPage'] = 'Default Homepage';
+		$strings['DefaultPage'] = 'Default city for bookings';
 		$strings['MyCalendar'] = 'My Calendar';
 		$strings['ScheduleCalendar'] = 'Schedule Calendar';
 		$strings['Registration'] = 'Registration';
@@ -258,8 +258,8 @@ class en_us extends Language
 		$strings['Email'] = 'Email';
 		$strings['EmailAddress'] = 'Email Address';
 		$strings['Phone'] = 'Phone';
-		$strings['Organization'] = 'Organization';
-		$strings['Position'] = 'Position';
+		$strings['Organization'] = 'Address';
+		$strings['Position'] = 'Postal Code';
 		$strings['Language'] = 'Language';
 		$strings['Permissions'] = 'Permissions';
 		$strings['Reset'] = 'Reset';
